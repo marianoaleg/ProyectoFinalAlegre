@@ -93,7 +93,7 @@ function presupuestoFinal(cemento,ladrillo,cantidadLadrillos, hierro, precioHier
     
 
 }
-let arrayPresupuesto = [];
+
 function presupuestoJSON(cemento,ladrillo,cantidadLadrillos, hierro, precioHierro, arena, precioArena){
     let totalLadrillos = ladrillo *cantidadLadrillos;
     let totalHierro = hierro * precioHierro;
@@ -193,6 +193,8 @@ const guardar = document.querySelector("#guardar");
         showConfirmButton: false,
         timer: 1500
         })) 
+        let arrayPresupuesto = [];
+        localStorage.setItem("presupuestos", JSON.stringify(arrayPresupuesto));
         let pres = presupuestoJSON(costoCemento,cantidadLadrillos,ladrillos[tipoLadrillo].precio,cantidadHierros,hierro6.precio,metroArena, arena.precio);
         let presLocalStorage = localStorage.getItem("presupuestos");
         arrayPresupuesto = JSON.parse(presLocalStorage);                  
