@@ -24,14 +24,14 @@ const arena = {
 }
 let ladrillos = [];
 let cementos = [];
-fetch('/ladrillos.json')
+fetch('ladrillos.json')
 .then((res)=>res.json())
 .then( (data)=>{
     data.forEach(producto => {       
         ladrillos[producto.id-1]=producto;
     });
 });
- fetch('/cementos.json')
+ fetch('cementos.json')
 .then((res)=>res.json())
 .then( (data)=>{
     data.forEach(producto => {       
