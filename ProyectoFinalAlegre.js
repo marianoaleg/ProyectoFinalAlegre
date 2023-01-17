@@ -182,7 +182,8 @@ filtrado = cementos.filter((elegido)=> elegido.nombre === cemento );
   costoCemento = presupuestoCemento(filtrado[0].precio , cantidadBolsas);
 presupuestoFinal(costoCemento,cantidadLadrillos,ladrillos[tipoLadrillo].precio,cantidadHierros,hierro6.precio,metroArena, arena.precio);
 })
-
+let arrayPresupuesto = [];
+        localStorage.setItem("presupuestos", JSON.stringify(arrayPresupuesto));
 let antiCopia = 0;
 const guardar = document.querySelector("#guardar");
  guardar.addEventListener("click",()=>{
@@ -193,8 +194,7 @@ const guardar = document.querySelector("#guardar");
         showConfirmButton: false,
         timer: 1500
         })) 
-        let arrayPresupuesto = [];
-        localStorage.setItem("presupuestos", JSON.stringify(arrayPresupuesto));
+        
         let pres = presupuestoJSON(costoCemento,cantidadLadrillos,ladrillos[tipoLadrillo].precio,cantidadHierros,hierro6.precio,metroArena, arena.precio);
         let presLocalStorage = localStorage.getItem("presupuestos");
         arrayPresupuesto = JSON.parse(presLocalStorage);                  
