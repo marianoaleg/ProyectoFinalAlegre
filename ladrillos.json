@@ -1,0 +1,8 @@
+[
+    {"id":1,"nombre": "Hueco del 8","superficie": 0.594,"precio": 60,"ancho": 0.08},
+    {"id":2,"nombre": "Hueco del 12","superficie": 0.594,"precio": 70,"ancho": 0.12},
+    {"id":3,"nombre": "Hueco del 18","superficie": 0.594,"precio": 80,"ancho": 0.18},
+    {"id":4,"nombre": "Portante del 12","superficie": 0.627,"precio": 75,"ancho": 0.12},
+    {"id":5,"nombre": "Portante del 18","superficie": 0.627,"precio": 85,"ancho": 0.18},
+    {"id":6,"nombre": "Portante del 20","superficie": 0.627,"precio": 90,"ancho": 0.20}
+]

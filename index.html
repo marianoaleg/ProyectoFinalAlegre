@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+</head>
+<body class="bg">
+   <header><h1>Calculadora de materiales</h1>
+    <div class="cajaSuperficie">
+       <form action="" id="formCalculadora">
+         <label for="inputAltura">Altura:</label>
+        <input id="inputAltura" type="number" name="altura"  min="0" placeholder="0">
+        x
+        <label for="inputLargo">Largo</label>
+        <input id="inputLargo" type="number" name="largo" min="0" placeholder="0">
+        <input type="submit" name="calcular" id="calcular" value="Calcular">       
+    </form>
+    </div>
+</header>
+    <main >
+        <div>
+   <form action="" id="formLadrillos" class="opacarOn">
+        <fieldset>
+            <legend>Seleccionar tipo de ladrillo a usar:</legend>
+            <div>
+            <input type="radio" name="ladrillo" id="hueco8" value="0"> Hueco del 8       
+        </div>
+        <div>
+            <input type="radio" name="ladrillo" id="hueco12" value="1"> Hueco del 12         
+        </div>
+        <div>
+            <input type="radio" name="ladrillo" id="hueco18" value="2"> Hueco del 18          
+        </div>
+        <div>    
+        <input type="radio" name="ladrillo" id="portante12" value="3"> Portante del 12
+        </div>
+        <div>
+            <input type="radio" name="ladrillo" id="portante18" value="4"> Portante del 18          
+        </div>
+        <div>
+            <input type="radio" name="ladrillo" id="portante20" value="5"> Portande del 20
+        </div>
+        
+    </fieldset>
+   </form>
+</div>
+<div id="divMateriales" class="opacarOn">
+    <fieldset>
+    <legend>Materiales necesarios:</legend>
+        <ul id="listaMateriales">
+        <li>Cemento: 0 bolsas</li>
+        <li>Ladrillos: 0 unidades</li>
+        <li>Varillas de hierro: 0  unidades</li>
+        <li>Arena: 0 metros</li>
+    </ul>
+</fieldset>
+</div>
+
+
+<h3 class="h3 opacarOn">Seleccionar cemento a utilizar:</h3> 
+<form class="cementos opacarOn">
+    
+    <div class="divCemento"><img src="./assets/media/avellaneda.webp" alt="cementoavellaneda" width="100px" height="100px">
+            <p id="avellaneda"></p>
+            <input type="radio" name="cemento" value="Avellaneda" >
+        </div>
+        <div class="divCemento"><img src="./assets/media/hidralit.webp" alt="cementohidralit" width="100px" height="100px">
+            <p id="hidralit"></p>
+            <input type="radio" name="cemento" value="Hidralit" >
+        </div>
+        <div class="divCemento"> <img src="./assets/media/holcim.webp" alt="cementoholcim" width="100px" height="100px">
+            <p id="holcim"></p>
+            <input type="radio" name="cemento" value="Holcim" >
+        </div>
+        <div class="divCemento"> <img src="./assets/media/lomanegra.webp" alt="cementolomanegra" width="100px" height="100px">
+            <p id="lomanegra"></p>
+            <input type="radio"  name="cemento" value="Loma Negra" >
+        </div>
+</form>
+
+</main>
+<div class="divPresupuesto">
+    <div>
+        <fieldset class="presupuesto">
+            <legend>Subtotal</legend>
+            <ul id="subtotal">
+                <li>Cemento: $0</li>
+                <li>Ladrillos: $0</li>
+                <li>Varillas de hierro: $0</li>
+                <li>Arena: $0</li>
+            </ul>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset class="presupuesto">
+            <legend>Total</legend>
+         <p id="total"> Presupuesto final: $0</p>
+        </fieldset>
+    </div>
+</div>
+
+<div class="saveReset opacarOn">
+    <button id="guardar">Guardar</button>
+    <button id="reset">Limpiar</button>
+</div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+<script src="/ProyectoFinalAlegre.js"></script>
+</body>
+</html>

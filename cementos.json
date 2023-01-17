@@ -1,0 +1,6 @@
+[
+    {"id": 1, "nombre": "Loma Negra","precio": 1830},
+    {"id": 2, "nombre": "Avellaneda","precio": 1750},
+    {"id": 3, "nombre": "Holcim","precio": 1260},
+    {"id": 4, "nombre": "Hidralit","precio": 1210}
+]

@@ -1,0 +1,63 @@
+.bg{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    
+    text-align: center;
+}
+.cajaSuperficie{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-top: 10px;
+    width: 500px;
+    height: 80px;
+    border-style: solid;
+}
+
+input{
+    height: 20px;
+}
+#formLadrillos{
+    margin-top: 20px;
+    width: 350px;
+}
+#divMateriales{
+    margin-top: 20px;
+    width: 350px;
+}
+ul{
+    list-style: none;
+}
+.cementos{
+    width: 1200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.divCemento{
+    
+ height: 200px;
+ width: 200px;
+ border-style: solid;
+ text-align: center;
+ padding-top: 5px;
+}
+.presupuesto{
+    width: 350px;
+    height: 120px;
+    margin-top: 10px;
+}
+.divPresupuesto{
+    display: inline-flex;
+}
+.opacarOn{
+    opacity: 0;
+}
+.opacarOff{
+    opacity: 1;
+}
