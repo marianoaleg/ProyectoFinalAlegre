@@ -183,7 +183,9 @@ filtrado = cementos.filter((elegido)=> elegido.nombre === cemento );
 presupuestoFinal(costoCemento,cantidadLadrillos,ladrillos[tipoLadrillo].precio,cantidadHierros,hierro6.precio,metroArena, arena.precio);
 })
 let arrayPresupuesto = [];
-        localStorage.setItem("presupuestos", JSON.stringify(arrayPresupuesto));
+ let controlStorage = localStorage.getItem("presupuestos");
+ (controlStorage == null) ? localStorage.setItem("presupuestos", JSON.stringify(arrayPresupuesto)) : "";
+ 
 let antiCopia = 0;
 const guardar = document.querySelector("#guardar");
  guardar.addEventListener("click",()=>{
