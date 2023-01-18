@@ -184,7 +184,7 @@ presupuestoFinal(costoCemento,cantidadLadrillos,ladrillos[tipoLadrillo].precio,c
 })
 let arrayPresupuesto = [];
  let controlStorage = localStorage.getItem("presupuestos");
- (controlStorage == null) ? localStorage.setItem("presupuestos", JSON.stringify(arrayPresupuesto)) : "";
+ controlStorage == null ? localStorage.setItem("presupuestos", JSON.stringify(arrayPresupuesto)) : "";
  
 let antiCopia = 0;
 const guardar = document.querySelector("#guardar");
